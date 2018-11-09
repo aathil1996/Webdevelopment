@@ -119,16 +119,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
 
   <title>Log In</title>
-  <link rel="stylesheet" href="../css/style1.css" />
+  <link rel="stylesheet" href="../css/style_login.css" />
 </head>
 
 
 <body>
   <div class="wrapper">
-    <h2>Login Form</h2>
+    <h1>Login Form</h1>
     <p>Please fill in your credentials to login.</p>
-
-
 
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 
@@ -139,23 +137,33 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       <div class="container">
         <div class="form-group <?php echo (!empty($username_error)) ? 'has-error' : ''; ?>">
           <label for="username"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="username" class="form-control" value="<?php echo $username; ?>" required>
+          <input type="text" placeholder="Enter Username/Email"
+           name="username" value="<?php echo $username; ?>" required>
+
           <span class="help-block"><?php echo $username_error; ?></span>
         </div>
 
         <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
           <label for="password"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="password" class="form-control" required>
+          <input type="password" placeholder="Enter Password" name="password"required>
           <span class="help-block"><?php echo $password_error; ?></span>
         </div>
 
         <div class="form-group">
-          <input type="submit" class="btn btn-primary" value="Submit">
+          <input type="submit" class="btn-primary" value="Log In">
+          <input type="submit" class="cancelbtn" value="Cancel">
+         
         </div>
+      
 
-        <p>Don't have an account? <a href="sign_up.php">Sign up now</a>.</p>
-      </form>
-
+      <div class="container" style="background-color:#f1f1f1">
+          <span class="account"> Don't have an account?
+                  <a href="sign_up.php">Sign up now</a>
+          </span>
+      </div>
+</form>
     </div>
+    <!-- Footer Section -->
+    <?php include '../structure/footer.php'; ?>
   </body>
   </html>

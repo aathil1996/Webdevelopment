@@ -2,7 +2,7 @@
 
 
 /* Attempt to connect to MySQL database */
-  $con=mysqli_connect("localhost","root","root","jobs");
+  $con=mysqli_connect("localhost","root","","jobs");
 
   // Check connection
   if($con === false){

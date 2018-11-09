@@ -5,8 +5,6 @@
 		<title> JOB HUB </title>
 		 <link rel="stylesheet" href="../css/style_home.css">
 		 <link rel="stylesheet" href="../css/style_search.css">
-		 <link rel="stylesheet" href="../css/style_footer.css">
-
 	</head>
 
 	<body>
@@ -33,9 +31,7 @@
 
 			<br/>
 			<br/>
-			<div id="banner" style="background-image: url(images/back.jpg)" >
-
-
+			
 				<form class="search"  style="margin:auto;max-width:500px">
   					<input type="text" name="search" placeholder="Search Jobs Here..!"/>
  					<br/>

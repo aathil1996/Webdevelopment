@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../css/style_footer.css">
+</head>
+<body>
 <footer class="footer">
      <p> Follow Us </p>
 
@@ -8,3 +14,6 @@
 
             <div class="copyrights">©  Copyright 2018 by <a href="https://ucsc.cmb.ac.lk/">UCSC</a>. All Rights Reserved.</div>
       </footer>
+</body>
+</html>
+
