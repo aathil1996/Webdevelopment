@@ -1,0 +1,41 @@
+#outline{
+	width:100%;
+	margin:10px;
+	background-color:#aacc11;
+	color;#2233dd;
+	border:1px;
+	border-style:solid;
+	line-height=130%;
+
+
+.btn {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn:hover {opacity: 1}
+
+.buttons{
+	text-align: center;
+}
+#content{
+	margin-left:200px;
+	border-left:1px solid gray;
+	padding:1em;
+	max-width:36em;
+	color: Blue;
+	text-align: justify;
+}
+
+
+
+
+
+	

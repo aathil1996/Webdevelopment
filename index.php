@@ -16,10 +16,9 @@ if(!isset($_SESSION['userid']))
 <!DOCTYPE html>
 <html lang="en">
 
-
-//adding the header
 <head>
-  <?php include 'structure/header.php'; ?>
+   <?php include '../structure/header.php'; ?>
+    
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini fixed">
@@ -31,14 +30,14 @@ if(!isset($_SESSION['userid']))
 
 
 
-    //Add content here depending on the type of userid
+   <!--Add content here depending on the type of userid
     // load jobs if it is a job seeker
     //load new job posting like things, if it is a Job Poster, or a company
     //load settings if it is an Admin
 
 
-    //adding footer
-    <?php include 'structure/footer.php'; ?>
+    //adding footer-->
+    <?php include '../structure/footer.php'; ?>
 
 
   </body>

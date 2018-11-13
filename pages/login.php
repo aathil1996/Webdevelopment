@@ -71,12 +71,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
               }
               elseif(isset($_SESSION["userType"]) && $_SESSION["userType"] === 1){
 //              need to load seeker welcome page
-                header("location: seekerHome.php");
+                header("location: welcome_js.php");
                 exit;
               }
-              elseif(isset($_SESSION["userType"]) && $_SESSION["userType"] === 0){
+              elseif(isset($_SESSION["userType"]) && $_SESSION["userType"] === 2){
 //              need to load company welcome page
-                header("location: companyHome.php");
+                header("location: welcome_jp.php");
                 exit;
               }
               else{
@@ -124,6 +124,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
 <body>
+  <?php include '../structure/header.php'; ?>
+
   <div class="wrapper">
     <h1>Login Form</h1>
     <p>Please fill in your credentials to login.</p>
@@ -152,9 +154,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <div class="form-group">
           <input type="submit" class="btn-primary" value="Log In">
           <input type="submit" class="cancelbtn" value="Cancel">
-         
+
         </div>
-      
+
 
       <div class="container" style="background-color:#f1f1f1">
           <span class="account"> Don't have an account?

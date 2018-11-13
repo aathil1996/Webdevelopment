@@ -1,43 +1,41 @@
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html>
 
 	<head>
 		<title> JOB HUB </title>
-		 <link rel="stylesheet" href="../css/style_home.css">
+		<?php
+include '../structure/header.php';
+	  if(isset($_SESSION["userType"]) && $_SESSION["userType"] === 0){
+	  //              need to load company welcome page
+		header("location: welcome_admin.php");
+	  }
+		elseif(isset($_SESSION["userType"]) && $_SESSION["userType"] === 1){
+			header("location: welcome_js.php");
+		}		elseif(isset($_SESSION["userType"]) && $_SESSION["userType"] === 2){
+			header("location: welcome_jp.php");
+				}
+				else{
+					include '../structure/menuBar_home.php';
+
+				}
+?>
 		 <link rel="stylesheet" href="../css/style_search.css">
 	</head>
 
 	<body>
-		<div id="outline">
-
-			<!-- Header Section -->
-			<div id="header">
-				<img src="../images/logo.jpg" id="logol"/>
-				<h1> JOB HUB </h1>
-			</div>
-
-			<div class="buttons">
-				<form>
-				<button type="submit" formaction="../pages/login.php" class="btn"> <span>Log In</span> </button>
-				<button type="submit" formaction="../pages/signupjs.php"  class="btn" > <span>Sign Up AS A JOB SEEKER</span>
-				</button>
-				<button type="submit" formaction="../pages/signupjp.php"  class="btn"><span>Sign Up AS A JOB PROVIDER</span>
-				</button>
-				</form>
-			</div>
-
-
-			<!-- Content Section -->
-
-			<br/>
-			<br/>
-			
-				<form class="search"  style="margin:auto;max-width:500px">
+		<div id="outline" style="margin:auto;max-width:500px">
+			<div class="search-container">
+				<form action="" >
   					<input type="text" name="search" placeholder="Search Jobs Here..!"/>
  					<br/>
  					<br/>
  					<br/>
- 					<button type="submit" formaction="../pages/login.php" class="button"> <span>Search</span> </button>
+ 					<button type="submit" formaction="../pages/login.php">Search</button>
 				</form>
 				<br/>
 				<br/>
