@@ -21,8 +21,8 @@ if(!isset($_SESSION['userid']))
     
 </head>
 
-<body class="hold-transition skin-blue sidebar-mini fixed">
-  <div class="wrapper">
+<body>
+  <div>
 
     <?php include 'structure/topbar.php'; ?>
 

@@ -29,7 +29,7 @@
     <ul>
       <li><a href="">Profile</a></li>
       <li><a href="#news">CV</a></li>
-      <li><a href="#contact">Vacancies</a></li>
+      <li><a href='../pages/jobsList.php'>Vacancies</a></li>
       <li><a href="#contact">Previously Applied Jobs</a></li>
       <li><a href="#about">Notifications</a></li>
       <li><a href="#about">Change Password</a></li>

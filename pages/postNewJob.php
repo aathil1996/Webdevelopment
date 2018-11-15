@@ -2,6 +2,7 @@
 session_start();
 
 
+
 // Include config file
 require_once "../dbConnection.php";
 
@@ -33,10 +34,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $ProvinceID =trim($_POST['province']);
     $salaryRangeID = trim($_POST['salaryRange']);
   }
-  if(isset($_SESSION["userID"])){
+
+
+  if(isset($_SESSION["userId"])){
     //              need to load company welcome page
-    $userID = $_SESSION["userID"];
-    //  echo $userID;
+    $userID = $_SESSION["userId"];
+    echo $userID;
   }
 
   $sql1 = "INSERT INTO job_posts (jobID, jobTitle, industryTypeID, jobType, userID, cityID, districtID, ProvinceID, salaryRangeID, contactName, contactPosition, contactPhone, contactEmail) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
@@ -160,7 +163,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         </select>
 
         <label>Salary Range in LKR</label>
-        <select name="jobType">
+        <select name="salaryRange">
           <option value=1> 0 - 10000 </option>
           <option value=2>10000 - 35000</option>
           <option value=3>35000 - 55000</option>
@@ -183,7 +186,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
           <option value="7">Ahangama</option>
           <option value="8">Ahungalla</option>
           <option value="9">Akaragama</option>
-          <option value="10">Eravur</option>
+          <option value="637">Eravur</option>
 
 
         </select>

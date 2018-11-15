@@ -71,12 +71,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
               }
               elseif(isset($_SESSION["userType"]) && $_SESSION["userType"] === 1){
 //              need to load seeker welcome page
-                header("location: seekerHome.php");
+                header("location: welcome_js.php");
                 exit;
               }
               elseif(isset($_SESSION["userType"]) && $_SESSION["userType"] === 2){
 //              need to load company welcome page
-                header("location: companyHome.php");
+                header("location: welcome_jp.php");
                 exit;
               }
               else{

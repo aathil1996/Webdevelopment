@@ -86,9 +86,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
               }
 
 
-
-              // Redirect user to welcome page
-              header("location: home.php");
             } else{
               // Display an error message if password is not valid
               $password_error = "Wrong Password";
