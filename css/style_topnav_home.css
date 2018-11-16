@@ -1,4 +1,4 @@
-* {box-sizing: border-box;}
+/* {box-sizing: border-box;}*/
 
 body {
   margin: 0;
@@ -8,23 +8,23 @@ body {
 .topnav {
   overflow: hidden;
 	background-color: #4CAF50;
-  margin: 4px 350px;
+ /* margin: 4px 350px;*/
 }
 
 .topnav a {
-  float: left;
+  float: right;
   display: block;
   color: black;
   text-align: center;
-  padding: 18px 20px;
-  text-decoration: none;
+  padding: 10px 20px;
+  text-decoration:none;
   font-size: 17px;
   font-weight: bold;
 }
 
 .topnav a:hover {
-  
-  color: white;
+  background-color: darkgreen;
+  color: rgb(255, 255, 255);
 }
 
 .topnav a.active {

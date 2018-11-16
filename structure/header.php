@@ -49,9 +49,10 @@ body {
   float: right;
 }
 
-
 </style>
 </head>
+
+
 <body>
 	<header>
 		<div class="header" id="ourHeader">

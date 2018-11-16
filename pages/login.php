@@ -122,7 +122,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 <body>
   <?php include '../structure/header.php'; ?>
-
+  <br>
+  <br>
   <div class="wrapper">
     <h1>Login Form</h1>
     <p>Please fill in your credentials to login.</p>

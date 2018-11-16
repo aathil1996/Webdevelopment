@@ -9,7 +9,7 @@ session_start();
 	<head>
 		<title> JOB HUB </title>
 		<?php
-include '../structure/header.php';
+
 	  if(isset($_SESSION["userType"]) && $_SESSION["userType"] === 0){
 	  //              need to load company welcome page
 		header("location: welcome_admin.php");
@@ -23,12 +23,13 @@ include '../structure/header.php';
 					include '../structure/menuBar_home.php';
 
 				}
-?>
+?>  	 
 		 <link rel="stylesheet" href="../css/style_search.css">
+		 <link rel="stylesheet" href="../css/style_home.css">
 	</head>
 
 	<body>
-		<div id="outline" style="margin:auto;max-width:500px">
+		<div id="outline" style="margin:auto;max-width:80%">
 			<div class="search-container">
 				<form action="" >
   					<input type="text" name="search" placeholder="Search Jobs Here..!"/>
@@ -116,8 +117,8 @@ include '../structure/header.php';
 		</div>
 
 		<!-- Footer Section -->
-		<?php include '../structure/footer.php'; ?>
-
+		
+			
 	</body>
 
 <html>

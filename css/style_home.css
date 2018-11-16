@@ -1,16 +1,22 @@
+body{
+	background-image:url("../images/preview/bg.jpg");
+	background-size:cover;
+}
+
 #outline{
 	width:100%;
 	margin:10px;
-	background-color:#aacc11;
-	color;#2233dd;
+	background-color:#ffffff6e;
+	color:#000000;
 	border:1px;
 	border-style:solid;
 	line-height=130%;
 }
 
+
 #header{
 	padding:3px;
-	background-color:#4CAF50;
+/*	background-color:#4CAF50;  */
 	border-bottom-style:solid;
 	border-bottom-color:green;
 	color:Blue;
