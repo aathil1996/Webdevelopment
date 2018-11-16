@@ -159,7 +159,7 @@ mysqli_close($con);
 
 <body>
   <?php include '../structure/header.php'; ?>
-
+    <br>
   <div class="container">
     <h1>Sign Up as a JOB Provider</h1>
     <p><b>Please fill this form to create an account.</b></p>

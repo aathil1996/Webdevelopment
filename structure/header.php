@@ -58,7 +58,7 @@ body {
 		<div class="header" id="ourHeader">
 		  <a href="../index.php" class="logo">Jobs Hub</a>
 		  <div class="header-right">
-		    <a class="active" href="#home">Home</a>
+		    <a class="active" href="#home">HOME</a>
 		    <a href="#contact">Contact</a>
 		    <a href="#about">About</a>
 		  </div>

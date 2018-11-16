@@ -29,13 +29,10 @@ session_start();
 	</head>
 
 	<body>
-		<div id="outline" style="margin:auto;max-width:80%">
+		<div id="outline" style="margin:auto; max-width:80%;">
 			<div class="search-container">
 				<form action="" >
   					<input type="text" name="search" placeholder="Search Jobs Here..!"/>
- 					<br/>
- 					<br/>
- 					<br/>
  					<button type="submit" formaction="../pages/login.php">Search</button>
 				</form>
 				<br/>
@@ -112,12 +109,10 @@ session_start();
 			</div>
 
 
-
-
 		</div>
 
 		<!-- Footer Section -->
-		
+		<?php include '../structure/footer.php' ?>
 			
 	</body>
 

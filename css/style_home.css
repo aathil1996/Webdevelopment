@@ -6,11 +6,11 @@ body{
 #outline{
 	width:100%;
 	margin:10px;
-	background-color:#ffffff6e;
+	background-color:#ffffff54;
 	color:#000000;
 	border:1px;
-	border-style:solid;
-	line-height=130%;
+	border-style:inset;
+	line-height=100%;
 }
 
 
