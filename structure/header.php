@@ -57,7 +57,7 @@ body {
 }
 
 .header a:hover {
-  color: White;
+  color: red;
 }
 
 .header a.active {
