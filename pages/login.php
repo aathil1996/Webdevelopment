@@ -119,10 +119,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   <link rel="stylesheet" href="../css/style_login.css" />
 </head>
 
+<?php include '../structure/header.php'; ?>
 
 <body>
-  <?php include '../structure/header.php'; ?>
-
+  <br>
+  <br>
+  
   <div class="wrapper">
     <h1>Login Form</h1>
     <p>Please fill in your credentials to login.</p>
@@ -149,20 +151,25 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         </div>
 
         <div class="form-group">
-          <input type="submit" class="btn-primary" value="Log In">
           <input type="submit" class="cancelbtn" value="Cancel">
+          <input type="submit" class="btn-primary" value="Log In">
 
         </div>
 
 
-      <div class="container" style="background-color:#f1f1f1">
+        <div class="container" style="background-color:#f1f1f1">
           <span class="account"> Don't have an account?
                   <a href="sign_up.php">Sign up now</a>
           </span>
+        </div>
       </div>
-</form>
-    </div>
-    <!-- Footer Section -->
-    <?php include '../structure/footer.php'; ?>
-  </body>
-  </html>
+    </form>    
+  </div> 
+</body> 
+<br>
+<br>
+<br>
+             
+<!-- Footer Section -->
+  <?php include '../structure/footer.php'; ?>
+</html>
