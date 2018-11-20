@@ -13,11 +13,11 @@ body {
 
 .header {
   overflow: hidden;
-  background-color: #FFC300;
+  background-color: #FFFF66;
   top: 0;
   position: fixed;
   width: 100%;
-  height: 15%;
+  height: 10%;
   z-index: 9999;
   vertical-align: middle;
 }
@@ -29,7 +29,7 @@ body {
   float: center;
   display: table-cell; 
   vertical-align: middle; 
-  color: white; 
+  color: black; 
   padding: 0; 
   font-size: 30px;
 }
@@ -61,7 +61,7 @@ body {
 }
 
 .header a.active {
-  background-color: dodgerblue;
+  background-color: red;
   color: white;
 }
 
