@@ -1,5 +1,5 @@
 body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #ffffff;}
+form {border: 3px solid #f1f1f1;}
 
 input[type=text], input[type=password], input[type=Number], select{
     width: 100%;
@@ -74,9 +74,7 @@ img.avatar {
 
 span.account {
     float: right;
-    padding-top: 12px;
-    font-size: 20px;
-    font-style:oblique;
+    padding-top: 16px;
 }
 
 /* Change styles for span and cancel button on extra small screens */

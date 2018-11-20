@@ -3,8 +3,30 @@
 require_once "../dbConnection.php";
 
 // Define variables and initialize with empty values
-$userID = $username = $password = $confirm_password = $email= $companyName = $Website = $industryType = $contactNumber =$address = $city = $district = $province = "";
-$username_err = $password_err = $confirm_password_err = $email_err = $companyName_err = $industryType_err = $contactNumber_err = $address_err =$city_err =$district_err =$province_err = "";
+  $userID =
+  $username =
+  $password =
+  $confirm_password =
+  $email= $companyName =
+  $Website = 
+  $industryType = 
+  $contactNumber =
+  $address = 
+  $city = 
+  $district = 
+  $province = "";
+
+  $username_err = 
+  $password_err = 
+  $confirm_password_err = 
+  $email_err = 
+  $companyName_err = 
+  $industryType_err = 
+  $contactNumber_err = 
+  $address_err =
+  $city_err =
+  $district_err =
+  $province_err = "";
 
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -72,7 +94,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   }
 
   // Check input errors before inserting in database
-  if(empty($username_err) && empty($pas sword_err) && empty($confirm_password_err)){
+  if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
 
     // Prepare an insert statement
     $sql = "INSERT INTO users (userType,username,email, password) VALUES (?,?,?,?)";
@@ -159,7 +181,7 @@ mysqli_close($con);
 
 <body>
   <?php include '../structure/header.php'; ?>
-    <br>
+
   <div class="container">
     <h1>Sign Up as a JOB Provider</h1>
     <p><b>Please fill this form to create an account.</b></p>

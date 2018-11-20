@@ -113,7 +113,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
           // Attempt to execute the prepared statement
           if(mysqli_stmt_execute($result3)){
             // Redirect to login page
-            header("location: login.php");
+            header("location: loginAfterSignup.php");
           } else{
             echo "Something went wrong. Please try again later.";
           }
@@ -159,7 +159,7 @@ mysqli_close($con);
 
 <body>
   <?php include '../structure/header.php'; ?>
-    <br>  
+
   <div class="container">
     <h1>Sign Up as a JOB Seeker</h1>
     <p><b>Please fill this form to create an account.</b></p>

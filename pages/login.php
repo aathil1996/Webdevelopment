@@ -157,8 +157,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
       <div class="container" style="background-color:#f1f1f1">
           <span class="account"> Don't have an account?
-                  <a href="sign_up.php"><mark> Sign up now </mark></a>
-          </span> 
+                  <a href="sign_up.php">Sign up now</a>
+          </span>
       </div>
 </form>
     </div>
