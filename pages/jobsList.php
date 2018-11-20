@@ -16,7 +16,7 @@ guests has login to apply button
 */
 
 
-include '../structure/header.php';
+//include '../structure/header.php';
 if(isset($_SESSION["userType"]) && $_SESSION["userType"] === 0){
 	//              need to load company welcome page
 	include '../structure/menuBar_admin.php';
@@ -26,15 +26,10 @@ elseif(isset($_SESSION["userType"]) && $_SESSION["userType"] === 1){
 	include '../structure/menuBar_seeker.php';
 	$actionVar = 1;
 
-}		elseif(isset($_SESSION["userType"]) && $_SESSION["userType"] === 2){
-
-	$actionVar = 2;
-
-	include '../structure/menuBar_Organization.php';
 }
 else{
 	include '../structure/menuBar_home.php';
-	$actionVar = 4;
+	$actionVar = 2;
 
 }
 echo $actionVar;
@@ -298,25 +293,7 @@ if($actionVar==0){
 	<td>".$contact."</td>
 	<td>".$phone."</td>
 	<td>".$email."</td>
-	<td>"."<input type=\"button\" name=\"apply\" value=\"Apply\"/>"."</td>";
-	echo "</tr>";
-}elseif($actionVar==2){
-	//he is a seeker
-	echo "<tr>";
-	echo "<td>".$SN."</td>
-	<td>".$jobTitle."</td>
-	<td>".$companyName."</td>
-	<td>".$jobIndustry."</td>
-	<td>".$jobType."</td>
-	<td>".$salaryRangelow."-".$salaryRangeup."</td>
-	<td>".$city."</td>
-	<td>".$district."</td>
-	<td>".$province."</td>
-	<td>".$contact."</td>
-	<td>".$phone."</td>
-	<td>".$email."</td>
-	<td>"."<input type=\"button\" name=\"edit\" value=\"Edit\"/>
-	<input type=\"button\" value=\"Delete\" name=\"delete\" >"."</td>";
+	<td>"."<input type=\"button\" name=\"apply\" value=\"Apply\" />"."</td>";
 	echo "</tr>";
 }
 else{
