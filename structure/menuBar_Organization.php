@@ -31,7 +31,7 @@
       <li><a href="#news">My Tasks</a></li>
       <li><a href="#contact">Post a Task</a></li>
       <li><a href="#about">Notification</a></li>
-      <li><a href="#about">Change Password</a></li>
+      <a href="../pages/reset_form.php">Change Password</a>
       <li><a href="#about">Log Out</a></li>
     </ul>
   </nav>
