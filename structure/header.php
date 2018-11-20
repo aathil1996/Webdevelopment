@@ -17,7 +17,7 @@ body {
   top: 0;
   position: fixed;
   width: 100%;
-  height: 5%;
+  height: 10%;
   z-index: 9999;
   vertical-align: middle;
 }
