@@ -1,66 +1,122 @@
-body{
-	background-image:url("../images/preview/bg.jpg");
-	background-size:cover;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-#outline{
-	width:100%;
-	margin:10px;
-	background-color:#ffffff54;
-	color:#000000;
-	border:1px;
-	border-style:inset;
-	line-height=100%;
+body {
+	font-family: 'Calibri','Verdana', 'Arial', Helvetica san-serif;
+	background-color: rgb(255,249,230);
+	min-width: 1024px;
+	overflow: auto;
 }
 
-
-#header{
-	padding:3px;
-/*	background-color:#4CAF50;  */
-	border-bottom-style:solid;
-	border-bottom-color:green;
-	color:Blue;
-	text-align:center;
-	font-size: 25px;
-	margin:10px;
-
+a {
+	text-decoration: none;
 }
 
-
-#logol{
-	float:left;
-	width:100px;
-	height:100px;
+.body{
+	margin: 0 auto;
+	clear : both;
+	align: center;
+	min-width: 1024px;
 }
 
-.btn {
-  background-color: #f4511e;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 0.6;
-  transition: 0.3s;
+.header{
+	position: fixed;
+	height: 15%;
+	width: 100%;
+	z-index: 9999;
+	vertical-align: middle;
+	background-color: black;
 }
 
-.btn:hover {opacity: 1}
-
-.buttons{
+.header1{
 	text-align: center;
-}
-#content{
-	margin-left:200px;
-	border-left:1px solid gray;
-	padding:1em;
-	max-width:36em;
-	color: Blue;
-	text-align: justify;
+	display: table; 
+	height: 60%; 
+	overflow: hidden;
+	background-color:black;
+	font-family: verdana;
+	width: 100%;
 }
 
+.header2{
+	text-align: center;
+	display: table; 
+	height: 40%; 
+	overflow: hidden;
+	background-color:gold;
+	font-size: 1.5em;
+	font-family: calibri;
+	width: 100%;
+}
+
+#imgleft{
+	position: absolute;
+	left: 5%;
+	top: 0%;
+	padding:0.5%;
+}
+
+.container{
+	position: absolute;
+	background-color:  #fbf4db ;
+	top: 15%;
+	width:100%;
+	height: auto;
+}
+
+.content{
+	width: auto;
+	margin-top: 1%;
+	margin-left: 18%;
+	height: 100%;
+	background-color: #fbf4db;
+	padding: 2%;
+	padding-top: 0%;
+}
+
+.content h1{
+	color: #171717; 
+}
+
+.content p{
+	color: #333031;
+	font-size: 1em;
+}
+
+.home{
+	float: right;
+	/*border: 0.05em solid #6B1A36;*/
+	width: 100%;
+}
+
+.homeDetails{
+	max-width: 70%;
+	/*border: 0.05em solid #6B1A36;*/
+	display: block;
+	float: left;
+	font-size: 0.6em;
+}
+
+.homeDetails h3{
+	color: #6B1A36;
+	text-decoration: bold;
+	font-weight: 200em;
+	font-size: 1.8em;
+	font-family: 'Calibri','Verdana', 'Arial', Helvetica san-serif;
+}
+
+.homeDetails p{
+	font-size: 1.5em;
+}
+
+.homeDetails ul{
+	font-size: 1.5em;
+	text-decoration: none;
+	padding-left: 5%;
+}
 
 
 
-
-	

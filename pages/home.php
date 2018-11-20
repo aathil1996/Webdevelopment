@@ -8,112 +8,57 @@ session_start();
 
 	<head>
 		<title> JOB HUB </title>
-		<?php
+			<?php
 
-	  if(isset($_SESSION["userType"]) && $_SESSION["userType"] === 0){
-	  //              need to load company welcome page
-		header("location: welcome_admin.php");
-	  }
-		elseif(isset($_SESSION["userType"]) && $_SESSION["userType"] === 1){
-			header("location: welcome_js.php");
-		}		elseif(isset($_SESSION["userType"]) && $_SESSION["userType"] === 2){
-			header("location: welcome_jp.php");
-				}
-				else{
-					include '../structure/menuBar_home.php';
-
-				}
-?>  	 
-		 <link rel="stylesheet" href="../css/style_search.css">
-		 <link rel="stylesheet" href="../css/style_home.css">
+			  if(isset($_SESSION["userType"]) && $_SESSION["userType"] === 0){
+			//              need to load admin welcome page
+				header("location: welcome_admin.php");
+			  }
+				elseif(isset($_SESSION["userType"]) && $_SESSION["userType"] === 1){
+			//              need to load seekers welcome page
+					header("location: welcome_js.php");
+				}		elseif(isset($_SESSION["userType"]) && $_SESSION["userType"] === 2){
+			//              need to load Company welcome page
+					header("location: welcome_jp.php");
+						}
+					
+			?>
+			<link rel="stylesheet" type="text/css" href="../css/style_hme.css">
 	</head>
 
-	<body>
-		<div id="outline" style="margin:auto; max-width:80%;">
-			<div class="search-container">
-				<form action="" >
-  					<input type="text" name="search" placeholder="Search Jobs Here..!"/>
- 					<button type="submit" formaction="../pages/login.php">Search</button>
-				</form>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
+	<body class="body">
 
-
-				<!-- Announce -->
-				<div class="Announce">
-					We’ve over <strong>15 0000</strong> Post offers for you!
-				</div>
-				<P>
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv 
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv 
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv 
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv 
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv 
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv 
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-
-					sdfgh cbftgh  hsbfsdfgb hfgb fsvf,gb fgvb fvfgvb vfgb dfsvbdcv <br/>
-				</P>
-					
-
-
-			</div>
-
-
+		<!-- Header topbar -->
+		<div class="header"> 
+			<?php 
+				include '../structure/header.php'; ?>			
 		</div>
+		<!-- End of Header topbar -->
+
+		<div class="container">
+
+			<!-- Side Bar -->
+			<div>
+				<?php 
+					include '../structure/menuBar_home.php'; ?>
+			</div>
+			<!-- End of Side Bar -->
+
+			<!-- content area of the login page -->
+			<div class="content">
+				<br>
+				<div class="home">
+					<div class="homeDetails"> </div>
+				</div>
+			</div>
+			<!-- end of content area -->
+
 
 		<!-- Footer Section -->
-		<?php include '../structure/footer.php' ?>
-			
+		<?php include '../structure/footer.php'; ?>
+		<!-- end of Footer Section -->
+	</div>
+
 	</body>
 
 <html>

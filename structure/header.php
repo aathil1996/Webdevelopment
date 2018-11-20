@@ -17,6 +17,26 @@ body {
   top: 0;
   position: fixed;
   width: 100%;
+  height: 15%;
+  z-index: 9999;
+  vertical-align: middle;
+}
+
+
+.heading-1{
+  text-align: center;
+   padding: 12px;
+  float: center;
+  display: table-cell; 
+  vertical-align: middle; 
+  color: white; 
+  padding: 0; 
+  font-size: 30px;
+}
+
+.heading-2{
+  display: table-cell; 
+  vertical-align: middle;
 }
 
 .header a {
@@ -50,19 +70,32 @@ body {
   float: right;
 }
 
+
 </style>
 </head>
-
-
 <body>
 	<header>
-		<div class="header" id="ourHeader">
-		  <a href="../index.php" class="logo">Jobs Hub</a>
-		  <div class="header-right">
-		    <a class="active" href="#home">HOME</a>
-		    <a href="#contact">Contact</a>
-		    <a href="#about">About</a>
-		  </div>
+		<div class="header">
+  		  <a href="../index.php" class="logo">Jobs Hub</a>
+        <div class="heading-1">
+            JobsHub.lk
+            </div>
+        <div class="header1">
+            
+        </div>
+
+  		  <div class="header-right">
+  		    <a class="active" href="#home">Home</a>
+  		    <a href="#contact">Contact</a>
+  		    <a href="#about">About</a>
+  		  </div>
+
+  
+        <div class="header2">
+          <div class="heading-2">
+            Give Jump Starts To Your Career..!
+          </div>
+        </div>
 		</div>
 	</header>
 

@@ -27,7 +27,7 @@
       <li><a href="#news">Manage Jobs</a></li>
       <li><a href="#contact">Manage Companies</a></li>
       <li><a href="#about">Manage Job Seekers</a></li>
-      <li><a href="#about">Change Password</a></li>
+      <li><a href="../pages/reset_form.php">Change Password</a></li>
       <li><a href="#about">Log Out</a></li>
     </ul>
   </div>

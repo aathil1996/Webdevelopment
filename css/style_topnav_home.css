@@ -1,82 +1,76 @@
-/* {box-sizing: border-box;}*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Calibri','Verdana', 'Arial', Helvetica san-serif;
+  background-color: rgb(255,249,230);
+  min-width: 1024px;
+  overflow: auto;
 }
 
-.topnav {
-  overflow: hidden;
-	background-color: #4CAF50;
- /* margin: 4px 350px;*/
+a {
+  text-decoration: none;
 }
 
-.topnav a {
-  float: right;
+.body{
+  margin: 0 auto;
+  clear : both;
+  align: center;
+  min-width: 1024px;
+}
+
+.container{
+  position: absolute;
+  background-color:  #fbf4db ;
+  top: 15%;
+  width:100%;
+  height: auto;
+}
+
+.sidebar{
+  width:18%;
+  background-color: #423E3D;
+  float: left;
+  position: fixed;
+  margin-bottom: 1%;
+  height: 100%;
+  padding-top:3%;
+}
+
+ul#nav{
+  margin-top:10%;
+}
+
+ul#nav li{
+  list-style: none;
+}
+
+ul#nav li a{
+  color:#ccc;
   display: block;
-  color: black;
+  padding: 4%;
+  font-size: 1.1em;
+  border-bottom: 0.05em solid #99908E;
+  -webkit-transition:0.2s;
+  -moz-transition:0.2s;
+  -o-transition:0.2s;
+  transition:0.2s;
+  font-size:1.3em; 
+  padding-left:0; 
   text-align: center;
-  padding: 10px 20px;
-  text-decoration:none;
-  font-size: 17px;
-  font-weight: bold;
 }
 
-.topnav a:hover {
-  background-color: darkgreen;
-  color: rgb(255, 255, 255);
+ul#nav li a:hover{
+  background-color: #4D494B;
+  color: #fff;
+  padding-left: 24%;
 }
 
-.topnav a.active {
-  background-color: #f44336;
-  color: white;
-}
-
-.topnav a.active:hover {
-  color: black;
-  background-color: #C70039;
-}
-
-
-.topnav .search-container {
-  float: right;
-}
-
-.topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-}
-
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.topnav .search-container button:hover {
-  background: #ccc;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: none;
-  }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
+ul#nav li a.selected{
+  background-color: #030303;
+  color: #fff;
+  padding-left: 20%;
 }
