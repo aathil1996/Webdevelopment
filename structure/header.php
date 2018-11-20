@@ -34,6 +34,7 @@ body {
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
+  font
 }
 
 .header a:hover {
