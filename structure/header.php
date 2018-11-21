@@ -46,7 +46,7 @@ body {
   padding: 12px;
   text-decoration: none;
   font-size: 18px; 
-  line-height: 15px;
+  line-height: 25px;
   border-radius: 4px;
   display: block;
 }

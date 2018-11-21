@@ -4,14 +4,21 @@
 
 </head>
 <body>
+<?php
 
-      <?php session_start();
-//include '../structure/header.php'; ?>
-      <?php include '../structure/menuBar_organization.php'; ?>
+  if(isset($_SESSION["userType"]) && $_SESSION["userType"] === 2){
 
+	   include '../structure/header.php';
 
-    <?php include '../structure/footer.php';
-?>
+	   include '../structure/menuBar_organization.php'; 
+
+		include '../structure/footer.php';
+  }
+  else{
+    header("location: login.php");
+  }
+
+  ?>
 
 </body>
 </html>
